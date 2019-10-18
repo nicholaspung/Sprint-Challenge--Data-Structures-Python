@@ -49,6 +49,19 @@ for key in holder:
     if holder[key] > 0:
         duplicates.append(key)
 
+# Another way
+# Runtime: 0.011090755462646484 seconds
+# sorted_array = names_1 + names_2
+# sorted_array.sort()
+# duplicates = []
+# no_duplicates = {}
+
+# for name in sorted_array:
+#     if name in no_duplicates:
+#         duplicates.append(name)
+#     else:
+#         no_duplicates[name] = 0
+
 # Answer for Stretch
 # Used python's built in verifier, runtime: 1.0983390808105469 seconds
 # Worse than using BST, but better in terms of memory (doesn't use additional memory except to store results)
