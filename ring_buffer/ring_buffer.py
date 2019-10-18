@@ -14,8 +14,4 @@ class RingBuffer:
   def get(self):
     # If I can store an array
     # Doesn't work if storing 0
-    result = []
-    for i in range(self.capacity):
-      if self.storage[i]:
-        result.append(self.storage[i])
-    return result
+    return list(filter(None, self.storage))
